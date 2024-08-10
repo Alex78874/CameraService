@@ -5,7 +5,7 @@ Original at -> https://github.com/LugicalDev/CameraService
 ```lua
 --> @LockCameraPanningPart: locks panning based on the look vector of a part.
 function CameraService:LockCameraPanningPart(lockXAxis: boolean, lockYAxis: boolean, Part: BasePart) 
-	assert(Part:IsA("BasePart"), "[CameraService] 3rd parameter should be a BasePart for :LockCameraPanning()")
+	assert(Part:IsA("BasePart"), "[CameraService] 3rd parameter should be a BasePart for :LockCameraPanningPart()")
 	
 	local lookVector = -Part.CFrame.LookVector
 	local angle = Vector2.new(
